@@ -175,21 +175,34 @@ footer span{color:#ffd66d}
     border:1px solid rgba(12,35,64,.08);
 }
 .doc-photo{
-    height:210px;
-    background:linear-gradient(135deg,#dfe8f1,#f8fafc);
+    height:180px;
+    background:linear-gradient(135deg,#e0edfb,#f4f8fc);
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#6b7785;
-    font-weight:800;
-    font-size:.95rem;
-    text-align:center;
+    padding:20px;
 }
-.doc-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+.drive-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:var(--white);
+    box-shadow:0 8px 20px rgba(12,35,64,.15);
+    text-decoration:none;
+    transition:all .3s ease;
+    border:2px solid transparent;
+}
+.drive-btn:hover{
+    transform:scale(1.1) translateY(-3px);
+    box-shadow:0 12px 25px rgba(12,35,64,.25);
+    border-color:var(--accent);
+}
+.drive-btn svg{
+    width:36px;
+    height:36px;
 }
 .doc-content{padding:17px}
 .doc-content .date{
@@ -208,7 +221,7 @@ footer span{color:#ffd66d}
     line-height:1.6;
 }
 @media(max-width:700px){
-    .doc-photo{height:180px}
+    .doc-photo{height:150px}
 }
 
 </style>
@@ -466,7 +479,7 @@ footer span{color:#ffd66d}
 
             <div class="doc-intro">
                 <strong>Photo Documentation</strong><br>
-                Photos are loaded directly from Google Drive. Replace <code>YOUR_GOOGLE_DRIVE_FILE_ID</code> with your specific file ID from the shareable link.
+                Click the Google Drive icon on any card below to view the official event photos and media folders directly on Google Drive.
             </div>
 
             <div class="doc-grid">
@@ -474,8 +487,16 @@ footer span{color:#ffd66d}
                 <!-- 1. Rehearsals & Preparation -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_1" alt="Rehearsals and Preparation"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add rehearsal photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 16, 2026</div>
@@ -487,8 +508,16 @@ footer span{color:#ffd66d}
                 <!-- 2. Street Dance Competition -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://drive.google.com/drive/folders/12uKJ6Avn1VYOUaYPMo1uClDQ-tprPGOp?usp=sharing" alt="Street Dance Competition"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add Street Dance photo here';">
+                        <a href="https://drive.google.com/drive/folders/12uKJ6Avn1VYOUaYPMo1uClDQ-tprPGOp?usp=sharing" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 17, 2026</div>
@@ -500,8 +529,16 @@ footer span{color:#ffd66d}
                 <!-- 3. Final Performance Competition -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_3" alt="Final Performance Competition"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add Final Performance photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 17, 2026</div>
@@ -513,8 +550,16 @@ footer span{color:#ffd66d}
                 <!-- 4. Laro ng Lahi (Faculty, Staff & Students) -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_4" alt="Laro ng Lahi"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add Laro ng Lahi photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 17, 2026</div>
@@ -526,8 +571,16 @@ footer span{color:#ffd66d}
                 <!-- 5. LGBTQIA+ Activities -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_5" alt="LGBTQIA+ Activities"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add LGBTQIA+ activity photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 18, 2026</div>
@@ -539,8 +592,16 @@ footer span{color:#ffd66d}
                 <!-- 6. Mr. & Ms. Acquaintance -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_6" alt="Mr. and Ms. Acquaintance"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add Mr. & Ms. photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">September 18, 2026</div>
@@ -552,8 +613,16 @@ footer span{color:#ffd66d}
                 <!-- 7. CICI Student Activities -->
                 <article class="doc-card">
                     <div class="doc-photo">
-                        <img src="https://lh3.googleusercontent.com/d/YOUR_GOOGLE_DRIVE_FILE_ID_7" alt="CICI Student Activities"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='📷 Add CICI activity photo here';">
+                        <a href="https://drive.google.com" target="_blank" class="drive-btn" title="View Photos on Google Drive">
+                            <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                                <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                                <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                                <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.55-1.2h-18.4c-1.65 0-3.2.45-4.55 1.2z" fill="#00832d"/>
+                                <path d="m59.8 53h27.5c0-1.55-.4-3.1-1.2-4.5l-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8z" fill="#ffba00"/>
+                                <path d="m16.1 76.8c1.35.8 2.9 1.2 4.55 1.2h52.9c1.65 0 3.2-.45 4.55-1.2l-13.75-23.8h-34.5z" fill="#2684fc"/>
+                            </svg>
+                        </a>
                     </div>
                     <div class="doc-content">
                         <div class="date">CICI Acquaintance Party</div>
